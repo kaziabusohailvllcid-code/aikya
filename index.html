@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AiKya — your world, in motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
+  <link rel="stylesheet" href="search.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#173a42" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="AiKya home"><span class="brand-mark">A</span><span>AiKya</span></a>
+      <p class="eyebrow">Your daily signal</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span><span>Home</span></button>
+        <button class="nav-item" data-view="discover"><span class="nav-icon">⌕</span><span>Search</span></button>
+        <button class="nav-item" data-view="clips"><span class="nav-icon">▶</span><span>Clips</span><span class="nav-badge">9+</span></button>
+        <button class="nav-item" data-view="reels"><span class="nav-icon">◉</span><span>Reels</span></button>
+        <button class="nav-item" data-view="videos"><span class="nav-icon">▣</span><span>Videos</span></button>
+        <button class="nav-item" data-view="movies"><span class="nav-icon">▤</span><span>Movies</span></button>
+        <button class="nav-item" data-view="tweets"><span class="nav-icon">#</span><span>Tweets</span></button>
+        <button class="nav-item" data-view="messages"><span class="nav-icon">✉</span><span>Messages</span></button>
+        <button class="nav-item" data-view="saved"><span class="nav-icon">▱</span><span>Saved</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span><span>Settings</span></button>
+        <div class="mini-profile"><div class="avatar avatar-self">S</div><div><strong>Sohail</strong><span>@sohailcreates</span></div><span class="more">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">A</span> AiKya</div>
+        <div class="search-wrap"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Search people, IDs, songs, videos..." /></div>
+        <div class="top-actions"><button class="icon-button" title="Notifications">♧<span class="notification-dot"></span></button><button class="account-button" id="openAccount"><span class="avatar avatar-self account-avatar">S</span><span class="account-label">Sign in</span></button><button class="create-button" id="openComposer"><span>+</span> Create</button></div>
+      </header>
+
+      <div class="page-heading">
+        <div><p class="eyebrow">Thursday, September 24</p><h1 id="viewTitle">Good morning, Sohail<span class="accent">.</span></h1><p class="subheading" id="viewSubtitle">Here is what is shaping your world today.</p></div>
+        <div class="view-switcher"><button class="switch active" data-feed="for-you">For you</button><button class="switch" data-feed="following">Following</button></div>
+      </div>
+
+      <section class="stories" aria-label="Stories">
+        <div class="story add-story"><div class="story-ring add-ring"><span>+</span></div><span>Your story</span></div>
+        <div class="story"><div class="story-ring ring-sky"><img src="https://i.pravatar.cc/100?img=47" alt="Maya" /></div><span>Maya</span></div>
+        <div class="story"><div class="story-ring ring-coral"><img src="https://i.pravatar.cc/100?img=12" alt="Arjun" /></div><span>Arjun</span></div>
+        <div class="story"><div class="story-ring ring-lime"><img src="https://i.pravatar.cc/100?img=32" alt="Nora" /></div><span>Nora</span></div>
+        <div class="story"><div class="story-ring ring-violet"><img src="https://i.pravatar.cc/100?img=5" alt="Luka" /></div><span>Luka</span></div>
+        <div class="story"><div class="story-ring ring-sky"><img src="https://i.pravatar.cc/100?img=25" alt="Zoya" /></div><span>Zoya</span></div>
+      </section>
+
+      <section class="content-grid">
+        <div class="feed" id="feed">
+          <article class="post" data-search="maya design studio architecture home">
+            <div class="post-header"><div class="avatar-wrap"><div class="avatar avatar-maya">M</div><span class="online-dot"></span></div><div class="post-author"><strong>Maya Chen</strong><span>@mayamakes · 2h</span></div><button class="post-menu">•••</button></div>
+            <p class="post-copy">A quiet corner for loud ideas. Finally finished the little studio nook I've been dreaming about. <span class="hashtag">#spaces #making</span></p>
+            <div class="post-image image-studio"><span class="image-label">STUDIO NOTES / 04</span><div class="studio-shape"></div><span class="image-caption">Make room for the work.</span></div>
+            <div class="post-footer"><div class="post-actions"><button class="action like-button"><span>♡</span><b>248</b></button><button class="action comment-button"><span>◌</span><b>32</b></button><button class="action share-button"><span>↗</span><b>8</b></button></div><button class="action save-button"><span>▱</span></button></div>
+          </article>
+
+          <article class="post" data-search="arjun music sound travel live">
+            <div class="post-header"><div class="avatar-wrap"><div class="avatar avatar-arjun">A</div></div><div class="post-author"><strong>Arjun Rao <span class="verified">✓</span></strong><span>@arjunrao · 4h</span></div><button class="post-menu">•••</button></div>
+            <p class="post-copy">Found this melody somewhere between Delhi and nowhere. New session, headphones recommended.</p>
+            <div class="music-card"><div class="music-art">♫</div><div class="music-meta"><strong>Between Stations</strong><span>Arjun Rao · Original audio</span><div class="progress"><i></i></div></div><button class="play-button">▶</button></div>
+            <div class="post-footer"><div class="post-actions"><button class="action like-button"><span>♡</span><b>91</b></button><button class="action comment-button"><span>◌</span><b>14</b></button><button class="action share-button"><span>↗</span><b>5</b></button></div><button class="action save-button"><span>▱</span></button></div>
+          </article>
+        </div>
+
+        <aside class="right-rail">
+          <div class="rail-card trend-card"><div class="card-heading"><div><p class="eyebrow">Explore now</p><h2>What's moving</h2></div><button class="plain-button">See all</button></div><div class="trend"><span>01</span><div><strong>#slowmade</strong><small>12.8K posts</small></div><b>↗</b></div><div class="trend"><span>02</span><div><strong>Indie creators</strong><small>8.4K posts</small></div><b>↗</b></div><div class="trend"><span>03</span><div><strong>Night walks</strong><small>5.1K posts</small></div><b>↗</b></div></div>
+          <div class="rail-card people-card"><div class="card-heading"><div><p class="eyebrow">Curated for you</p><h2>People to know</h2></div><button class="plain-button">Refresh</button></div><div class="person"><div class="avatar avatar-person">J</div><div><strong>Jules Park</strong><small>@julesinmotion</small></div><button class="follow-button">Follow</button></div><div class="person"><div class="avatar avatar-person two">K</div><div><strong>Kiara Mehta</strong><small>@kiaramehta</small></div><button class="follow-button">Follow</button></div><div class="person"><div class="avatar avatar-person three">R</div><div><strong>Rian Sol</strong><small>@riansol</small></div><button class="follow-button">Follow</button></div></div>
+          <footer class="rail-footer"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="content-policy.html">Community rules</a><br><span>© 2026 AiKya Studio</span></footer>
+        </aside>
+      </section>
+    </main>
+    <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+      <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span><span>Home</span></button>
+      <button class="nav-item" data-view="discover"><span class="nav-icon">⌕</span><span>Search</span></button>
+      <button class="nav-item" data-view="movies"><span class="nav-icon">▤</span><span>Movies</span></button>
+      <button class="nav-item" data-view="messages"><span class="nav-icon">✉</span><span>Messages</span></button>
+      <button class="nav-item" data-view="saved"><span class="nav-icon">▱</span><span>Saved</span></button>
+      <button class="mobile-more-toggle" id="mobileMoreToggle" type="button" aria-expanded="false" aria-controls="mobileMoreMenu"><span class="nav-icon">•••</span><span>More</span></button>
+    </nav>
+    <div class="mobile-more-menu" id="mobileMoreMenu" aria-label="More sections">
+      <button class="nav-item" data-view="clips"><span class="nav-icon">▶</span><span>Clips</span></button>
+      <button class="nav-item" data-view="reels"><span class="nav-icon">◉</span><span>Reels</span></button>
+      <button class="nav-item" data-view="videos"><span class="nav-icon">▣</span><span>Videos</span></button>
+      <button class="nav-item" data-view="tweets"><span class="nav-icon">#</span><span>Tweets</span></button>
+      <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span><span>Settings</span></button>
+    </div>
+  </div>
+
+  <div class="composer-modal" id="composerModal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="composer"><div class="modal-header"><div><p class="eyebrow">Share a moment</p><h2>Create post</h2></div><button class="close-button" data-close-modal>×</button></div><div class="composer-author"><div class="avatar avatar-self">S</div><strong>Sohail</strong><span>· Everyone</span></div><textarea id="postText" placeholder="What is on your mind?"></textarea><div class="composer-fields"><select id="postType" aria-label="Post type"><option value="text">Text post</option><option value="image">Photo post</option><option value="video">Video clip</option><option value="reel">Reel</option><option value="movie">Movie</option><option value="tweet">Tweet</option></select><input id="mediaUrl" type="url" placeholder="Optional media URL" /><input id="mediaFile" type="file" accept="image/*,video/*" /></div><div class="composer-tools"><button>▧ Photo</button><button>▶ Clip</button><button>☺ Feeling</button><button class="publish-button" id="publishPost">Post</button></div></div></div>
+  <div class="auth-modal" id="authModal" aria-hidden="true"><div class="modal-backdrop" data-close-auth></div><div class="auth-card"><button class="close-button" data-close-auth>×</button><div class="auth-brand"><span class="brand-mark">A</span><span>AiKya</span></div><div id="authGuest"><p class="eyebrow">Welcome back</p><h2 id="authTitle">Log in to AiKya</h2><div class="auth-tabs"><button class="auth-tab active" data-auth-mode="login">Log in</button><button class="auth-tab" data-auth-mode="signup">Create account</button></div><form id="authForm"><label>Email or phone<input id="authIdentity" required placeholder="you@gmail.com or +91 98765 43210"></label><label id="authNameWrap" class="hidden">Full name<input id="authName" placeholder="Your name"></label><label>Password<input id="authPassword" type="password" required minlength="4" placeholder="At least 4 characters"></label><button class="auth-submit" type="submit">Log in</button></form><button class="forgot-button" id="forgotPassword">Forgot password?</button><p class="auth-note">Local demo account: your details stay on this device.</p></div><div id="authReset" class="hidden"><p class="eyebrow">Account recovery</p><h2>Reset your password</h2><p class="auth-description">Enter your Gmail or phone number and we will create a reset code for this local demo.</p><form id="resetForm"><label>Email or phone<input id="resetIdentity" required></label><button class="auth-submit" type="submit">Send reset code</button></form><button class="forgot-button" id="backToLogin">Back to login</button></div><div id="authUser" class="hidden"><p class="eyebrow">Your account</p><h2 id="profileHeading">Your profile</h2><div class="profile-editor"><div class="avatar avatar-self large-avatar" id="profileAvatar">S</div><label>Display name<input id="profileName"></label><label>Username<input id="profileUsername"></label><label>Bio<textarea id="profileBio" rows="3"></textarea></label><button class="auth-submit" id="saveProfile">Save profile</button><div class="settings-list"><label class="setting-row"><span>Push notifications</span><input type="checkbox" id="settingNotifications" checked></label><label class="setting-row"><span>Private account</span><input type="checkbox" id="settingPrivate"></label><label class="setting-row"><span>Autoplay clips</span><input type="checkbox" id="settingAutoplay" checked></label></div><button class="logout-button" id="logoutButton">Log out</button></div></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+  <script>if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('./sw.js').catch(() => {});</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.mobile-bottom-nav,.mobile-more-menu{display:none}
+
+@media(max-width:720px){
+  .topbar{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto;gap:10px 12px;height:auto;min-height:0;padding:10px 14px}
+  .mobile-brand{grid-column:1;grid-row:1}
+  .top-actions{grid-column:2;grid-row:1;gap:8px}
+  .account-label{display:none}
+  .search-wrap{grid-column:1 / -1;grid-row:2;width:100%;min-height:40px;order:initial}
+  .page-heading{padding:20px 16px 17px}
+  .page-heading h1{font-size:26px;line-height:1.2}
+  .page-heading .subheading{font-size:13px;line-height:1.45}
+  .view-switcher{margin-top:14px}
+  .stories{gap:12px;padding:0 16px 20px}
+  .content-grid{display:block;padding:0 12px calc(90px + env(safe-area-inset-bottom))}
+  .post{padding:15px;border-radius:12px}
+  .post-image{height:230px}
+  .right-rail{display:none}
+  .mobile-bottom-nav{position:fixed;z-index:20;right:0;bottom:0;left:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;padding:5px 7px calc(5px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:rgba(255,255,255,.96);box-shadow:0 -5px 18px rgba(20,40,45,.07);backdrop-filter:blur(14px)}
+  .mobile-bottom-nav .nav-item,.mobile-more-toggle{display:flex;min-width:0;min-height:48px;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:4px 1px;border-radius:8px;font-size:9px;font-weight:700;white-space:nowrap}
+  .mobile-bottom-nav .nav-icon{width:auto;font-size:18px;line-height:20px}
+  .mobile-more-toggle .nav-icon{font-size:15px;letter-spacing:1px}
+  .mobile-more-menu{position:fixed;z-index:21;right:10px;bottom:calc(68px + env(safe-area-inset-bottom));grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;width:min(250px,calc(100vw - 20px));padding:8px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 12px 32px rgba(20,40,45,.18)}
+  .mobile-more-menu.open{display:grid}
+  .mobile-more-menu .nav-item{display:flex;min-height:42px;align-items:center;gap:8px;padding:7px 9px;border-radius:8px;font-size:12px;text-align:left}
+  .mobile-more-menu .nav-icon{width:20px;font-size:17px;text-align:center}
+  .movies-view .content-grid{padding:0 12px calc(90px + env(safe-area-inset-bottom))}
+  .movies-view .movie-catalog{padding:15px}
+  .movies-view .movie-grid{grid-template-columns:1fr}
+  .toast{bottom:calc(78px + env(safe-area-inset-bottom))}
+}
+
+@media(max-width:380px){
+  .mobile-bottom-nav{padding-right:4px;padding-left:4px}
+  .mobile-bottom-nav .nav-item,.mobile-more-toggle{font-size:8px}
+  .top-actions{gap:5px}
+  .account-avatar{width:27px;height:27px}
+}
