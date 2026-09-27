@@ -8,4 +8,4 @@ window.AIKYA_FIREBASE_CONFIG = {
   measurementId: "G-1KGG16VK55"
 };
 
-window.AIKYA_TMDB_API_KEY = "78f5f720ac55f4ba26b123701a7c0bae";
+AIKYA_TMDB_API_KEY = "78f5f720ac55f4ba26b123701a7c0bae";
