@@ -1,4 +1,4 @@
-AIKYA_FIREBASE_CONFIG = {
+window.AIKYA_FIREBASE_CONFIG = {
   apiKey: "AIzaSyCQg8kxfXSWUCmkGGNKXbgLERYyrYuV0KA",
   authDomain: "aikya-7fa1d.firebaseapp.com",
   projectId: "aikya-7fa1d",
